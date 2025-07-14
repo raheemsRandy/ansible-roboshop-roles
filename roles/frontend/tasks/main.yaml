@@ -1,7 +1,3 @@
-- name: configuring frontend server
-  hosts: frontend
-  task:
-
   - name: disabling nginx
     ansible.builtin.command: dnf module disable nginx -y
 
