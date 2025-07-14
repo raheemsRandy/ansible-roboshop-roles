@@ -5,9 +5,9 @@
     ansible.builtin.command: dnf module enable nginx:1.24 -y
 
   - name: installing nginx
-    anible.builtin.dnf:
+    ansible.builtin.dnf:
       name: nginx
-      state: installed
+      state: present
 
   - name: start and enable
     ansible.builtin.service:
