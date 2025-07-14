@@ -7,7 +7,7 @@
   - name: installing nginx
     anible.builtin.dnf:
       name: nginx
-      state: present
+      state: installed
 
   - name: start and enable
     ansible.builtin.service:
